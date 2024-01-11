@@ -28,23 +28,32 @@ def navbar():
             ),
             xt.text(
                 "dot.agent",
-             
-                class_name="relative font-Poppins font-extrabold  bg-clip-text text-transparent bg-gradient-to-l from-[#ED5FC4] to-[#4123E6]",
+                class_name="relative font-[Poppins] text-lg font-extrabold	bg-clip-text text-transparent bg-gradient-to-l from-[#ED5FC4] to-[#4123E6]",
             ),
             class_name="flex gap-4 items-center",
         ),
         xt.box(
             xt.box(
-                xt.box(
+                xt.hstack(
                     xt.image(
                         src="/Frame1.svg",
+                        width="1em",
+                        height="auto",
+                        class_name="min-w-[1em]",
                     ),
-                    class_name="absolute inset-y-0 left-0 flex items-center pl-4",
-                ),
-                xt.input(
-                    placeholder="Ask the smartest AI agent",
-                    variant="unstyled",
-                    class_name="lg:w-80 w-64 p-3 pl-12 font-sans font-normal text-base md:block hidden font-DMSans text-[#6C7275] placeholder-[#6C7275] rounded-xl bg-red-500",
+                    xt.input(
+                        placeholder="Ask the smartest AI agent",
+                        display=["none", "none", "none", "flex", "flex"],
+                        color="white",
+                        _placeholder={"color": "#6C7275", "font_size": "13px"},
+                        variant="unstyled",
+                        padding_right="8",
+                        padding_bottom="1",
+                    ),
+                    bg="#242829",
+                    rounded="xl",
+                    padding_x="4",
+                    padding_y="1",
                 ),
                 class_name="relative",
             ),
@@ -80,7 +89,7 @@ def index() -> xt.Component:
                     favoritecharacters(),
                     class_name=" md:mx-12 mx-6",
                 ),
-                   class_name="sm:ml-0 md:ml-0 bg-[#232627] overflow-hidden flex flex-col pt-6 pb-4 md:pb-18 rounded-[1.25rem]",
+                class_name="sm:ml-0 md:ml-0 bg-[#232627] overflow-hidden flex flex-col pt-6 pb-4 md:pb-18 rounded-[1.25rem]",
             ),
             class_name="bg-[#141718] h-full",
         ),
