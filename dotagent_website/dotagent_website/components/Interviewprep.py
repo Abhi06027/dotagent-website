@@ -4,9 +4,25 @@ import nextpy as xt
 def Interviewprep_img(src):
     return xt.box(
         xt.box(
-            xt.image(
-                src=src,
-                class_name="lg:w-80 lg:h-80 md:w-80 w-72 relative text-lg rounded-t-lg font-semibold text-[#6c7275] bg-[rgba(20,_23,_24,_0.5)] self-start",
+            xt.box(
+                xt.box(
+                    xt.image(
+                        src=src,
+                        class_name="lg:w-80 lg:h-80 md:w-80 w-72 relative text-lg rounded-t-lg font-semibold text-[#6c7275] bg-[rgba(20,_23,_24,_0.5)] self-start",
+                    ),
+                    xt.box(
+                        xt.text(
+                            "Interview Prep",
+                            class_name="md:text-sm text-xs text-white shadow-[0px_25px_39px_-20px_rgba(15,15,_15,_0.1)] bg-[linear-gradient(93deg,#23262f_0%,rgba(35,_38,_47,_0.7)_0%)] bg-cover bg-no-repeat flex flex-col items-center ml-0 px-2 py-1 rounded-full ",
+                        ),
+                        xt.text(
+                            "Figma",
+                            class_name="text-3xl font-inter font-bold tracking-[-1.28] leading-[3rem] text-white ",
+                        ),
+                        class_name="absolute pl-5 py-3 top-0 left-0",
+                    ),
+                    class_name="relative",
+                ),
             ),
             xt.box(
                 xt.box(

@@ -18,24 +18,20 @@ def all_agents_img():
                 ),
                 xt.box(
                     xt.box(
-                        xt.box(
-                            "Get",
-                            class_name="flex items-center border-0 rounded-3xl max-h-[1.38rem] tracking-normal font-[DMSans] px-6 py-4 bg-[#8e55ea] text-white lg:text-lg text-base",
-                        ),
-                        class_name="flex justify-between items-center mt-4 md:mt-1",
+                        "Get",
+                        class_name="flex items-center border-0 rounded-3xl max-h-[1.38rem] tracking-normal font-[DMSans] px-6 py-4 bg-[#8e55ea] text-white lg:text-lg text-base",
                     ),
-                    xt.box(
-                        xt.image(
-                            src="/ShareButton.png",
-                            class_name="w-10 h-9",
-                        ),
+                    xt.image(
+                        src="/ShareButton.png",
+                        class_name="w-10 h-9",
                     ),
-                    class_name="flex items-center justify-between ",
+                    class_name="flex justify-between gap-20 items-center mt-4 md:mt-1",
                 ),
+                class_name="flex flex-col ",
             ),
-            class_name="flex items-center gap-3",
+            class_name="flex gap-4",
         ),
-        class_name="md:p-5 p-3 bg-[#1b1e1f] w-full my-4 rounded-3xl",
+        class_name="md:p-5 p-3 bg-[#1b1e1f]  my-4 rounded-3xl",
     )
 
 

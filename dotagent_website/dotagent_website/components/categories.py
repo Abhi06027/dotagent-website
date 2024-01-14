@@ -3,7 +3,7 @@ import nextpy as xt
 
 def categories_img(src):
     return xt.box(
-        xt.image(src=src,),
+        xt.image(src=src, class_name="min-w-[9.375rem]"),
     )
 
 
