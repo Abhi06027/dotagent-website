@@ -16,15 +16,15 @@ def banner():
             #                 "dot.agent",
             #                 class_name="bg-gradient-to-r from-[#660AB5] to-[#9F0FD2] bg-clip-text text-transparent",
             #             ),
-            #             class_name="text-[#141718] font-DMSans h2 lg:text-5xl tracking-normal text-2xl md:text-3xl sm:leading-6 font-bold",
+            #             class_name="text-[#141718] font-[DMSans] h2 lg:text-5xl tracking-normal text-2xl md:text-3xl sm:leading-6 font-bold",
             #         ),
             #         xt.text(
             #             "Reimagine your digital life with dotagents—mini AI apps tailored to your needs.",
-            #             class_name="text-[#141718] relative h2 md:text-2xl text-xl z-[99] font-medium font-DMSans lg:max-w-xl max-w-sm  my-2 leading-6 md:leading-8",
+            #             class_name="text-[#141718] relative h2 md:text-2xl text-xl z-[99] font-medium font-[DMSans] lg:max-w-xl max-w-sm  my-2 leading-6 md:leading-8",
             #         ),
             #         xt.box(
             #             "Sign up for free",
-            #             class_name="bg-white text-black w-44 rounded-md md:text-lg  font-DMSans text-xs  mt-8 py-3.5  px-4  font-bold h6",
+            #             class_name="bg-white text-black w-44 rounded-md md:text-lg  font-[DMSans] text-xs  mt-8 py-3.5  px-4  font-bold h6",
             #         ),
             #         xt.image(
             #             src="/robort.png",

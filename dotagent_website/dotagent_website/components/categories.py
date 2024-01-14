@@ -6,7 +6,7 @@ def categories():
         xt.box(
             xt.text(
                 "Categories",
-                class_name="lg:my-6 font-DMSans h6 lg:text-2xl my-2 text-lg md:my-4 md:text-[1.375rem] leading-8 text-[#E8ECEF] font-normal",
+                class_name="lg:my-6 font-[DMSans] h6 lg:text-2xl my-2 text-lg md:my-4 md:text-[1.375rem] leading-8 text-[#E8ECEF] font-normal",
             ),
             xt.box(
                 xt.image(

@@ -6,7 +6,10 @@ from dotagent_website.components.banner import banner
 from dotagent_website.components.categories import categories
 from dotagent_website.components.Interviewprep import Interviewprep
 from dotagent_website.components.favoritecharacters import favoritecharacters
+from dotagent_website.components.featured import featured
+from dotagent_website.components.all_agents import all_agents
 
+from dotagent_website import styles
 
 # Construct the filename to display
 from xtconfig import config
@@ -28,7 +31,7 @@ def navbar():
             ),
             xt.text(
                 "dot.agent",
-                class_name="relative font-[Poppins] text-lg font-extrabold	bg-clip-text text-transparent bg-gradient-to-l from-[#ED5FC4] to-[#4123E6]",
+                class_name="relative font-[Poppins] text-lg font-extrabold bg-clip-text text-transparent bg-gradient-to-l from-[#ED5FC4] to-[#4123E6]",
             ),
             class_name="flex gap-4 items-center",
         ),
@@ -39,7 +42,7 @@ def navbar():
                         src="/Frame1.svg",
                         width="1em",
                         height="auto",
-                        class_name="min-w-[1em]",
+                        class_name="min-w-[1em] ",
                     ),
                     xt.input(
                         placeholder="Ask the smartest AI agent",
@@ -51,9 +54,7 @@ def navbar():
                         padding_bottom="1",
                     ),
                     bg="#242829",
-                    rounded="xl",
-                    padding_x="4",
-                    padding_y="1",
+                    class_name="px-4 lg:py-1 py-4 rounded-full lg:rounded-xl",
                 ),
                 class_name="relative",
             ),
@@ -71,7 +72,7 @@ def navbar():
                 ),
                 class_name="bg-[#C2E281] w-11 h-11  rounded-full  ",
             ),
-            class_name="flex items-center justify-center   gap-5",
+            class_name="flex items-center justify-center gap-3",
         ),
         class_name="flex items-center justify-between bg-[#141718] py-2 px-4",
     )
@@ -87,6 +88,8 @@ def index() -> xt.Component:
                     categories(),
                     Interviewprep(),
                     favoritecharacters(),
+                    featured(),
+                    all_agents(),
                     class_name=" md:mx-12 mx-6",
                 ),
                 class_name="sm:ml-0 md:ml-0 bg-[#232627] overflow-hidden flex flex-col pt-6 pb-4 md:pb-18 rounded-[1.25rem]",
@@ -97,8 +100,10 @@ def index() -> xt.Component:
 
 
 app = xt.App(
+    style=styles.base_style,
     stylesheets=[
-        "https://fonts.googleapis.com/css2?family=Poppins&display=swap",
+        "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap",
+        "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700;9..40,800&display=swap",
     ],
 )
 app.add_page(index)
