@@ -26,9 +26,9 @@ def all_agents_img():
                 ),
                 class_name="flex justify-between items-center mt-4 md:mt-1",
             ),
-            class_name="flex justify-center lg:w-3/4 ml-3 w-3/4 flex-col",
+            class_name="flex  ml-3 w-full flex-col",
         ),
-        class_name="flex gap-4 md:p-5 p-3 bg-[#1b1e1f]  my-4 rounded-3xl",
+        class_name="flex w-full gap-4 md:p-5 p-3 bg-[#1b1e1f]  mb-4 rounded-3xl",
     )
 
 
@@ -43,12 +43,14 @@ def all_agents():
                 xt.box(
                     all_agents_img(),
                     all_agents_img(),
+                    class_name="w-full"
                 ),
                 xt.box(
                     all_agents_img(),
                     all_agents_img(),
+                    class_name="w-full"
                 ),
-                class_name="flex lg:flex-row flex-col justify-between gap-5",
+                class_name="flex lg:flex-row flex-col w-full justify-between gap-0 lg:gap-10",
             ),
         ),
     )

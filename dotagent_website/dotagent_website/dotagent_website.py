@@ -94,7 +94,7 @@ def index() -> xt.Component:
                 ),
                 class_name="sm:ml-0 md:ml-0 bg-[#232627] overflow-hidden flex flex-col pt-6 pb-4 md:pb-18 rounded-[1.25rem]",
             ),
-            class_name="bg-[#141718] h-full",
+            class_name="bg-[#141718] h-full w-full",
         ),
     )
 
