@@ -57,9 +57,10 @@ def Interviewprep_img(src):
                         ),
                         class_name="flex space-x-4 items-center ",
                     ),
-                    class_name="bg-[#1b1e1f] lg:w-full md:w-80 w-72 flex gap-4 p-4 rounded-b-lg",
+                    class_name="flex justify-between  gap-4 p-4 ",
                 ),
             ),
+            class_name="bg-[#1b1e1f] md:w-80 w-72 rounded-b-lg "
         ),
     )
 
